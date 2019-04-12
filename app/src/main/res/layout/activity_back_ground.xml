@@ -10,14 +10,14 @@
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Main Screen"
+            android:text="BACKGROUND"
             android:id="@+id/text12310"
             android:layout_gravity="left"
             android:textColor="#FAFAFA"
             android:textSize="30dp"
             android:background="#1A237E"
     />
-    <ImageButton
+    <ImageView
             android:id="@+id/Btn"
             android:scaleType="fitCenter"
             android:layout_width="140dp"

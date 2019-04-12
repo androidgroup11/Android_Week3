@@ -34,18 +34,19 @@
             android:textSize="25dp"
     />
     <Button
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:text="CHANGE BACKGROUND"
-            android:id="@+id/BTN1"
+            android:id="@+id/BtnBackGround"
             android:textColor="#212121"
             android:layout_gravity="center"
             android:background="#E0E0E0"
     />
     <Button
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:text="CHANGE TITLE"
+            android:id="@+id/BtnTitle"
             android:textColor="#212121"
             android:layout_gravity="center"
             android:background="#E0E0E0"

@@ -19,21 +19,25 @@
             android:background="#1A237E"
     />
     <ImageView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:src=""
+            android:scaleType="fitCenter"
+            android:layout_marginTop="200dp"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:src="@drawable/a"
             android:layout_gravity="center"
     />
     <TextView
+            android:layout_marginBottom="100dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="MANCITY"
             android:id="@+id/text123"
             android:layout_gravity="center"
             android:textColor="#8BC34A"
             android:textSize="25dp"
     />
     <Button
+            android:layout_marginTop="100dp"
             android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:text="CHANGE BACKGROUND"
@@ -50,6 +54,7 @@
             android:textColor="#212121"
             android:layout_gravity="center"
             android:background="#E0E0E0"
+
     />
 
 </LinearLayout>

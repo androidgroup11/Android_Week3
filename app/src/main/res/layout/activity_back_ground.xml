@@ -24,7 +24,7 @@
             android:layout_height="150dp"
             android:layout_gravity="right"
             android:background="@null"
-            android:src=""
+            android:src="@drawable/a"
     />
     <LinearLayout
             android:layout_width="match_parent"

@@ -27,7 +27,6 @@
             android:layout_gravity="center"
     />
     <TextView
-            android:layout_marginBottom="100dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MANCITY"
@@ -37,7 +36,6 @@
             android:textSize="25dp"
     />
     <Button
-            android:layout_marginTop="100dp"
             android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:text="CHANGE BACKGROUND"

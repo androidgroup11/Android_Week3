@@ -3,6 +3,7 @@ package com.example.assignment_week3
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_back_ground.*
@@ -25,15 +26,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         currentBackground = getString(R.string.ManC)
+
+        currentTitle = getString(R.string.default_title)
+        currentTitleColor = ContextCompat.getColor(this, R.color.Red);
+
         BtnBackGround.setOnClickListener(btnChangeBackgroundClicked)
-        BtnBackGround.setOnClickListener {
-            val intent: Intent =  Intent(this, BackGroundActivity::class.java)
-            startActivity(intent)
-        }
-        BtnTitle.setOnClickListener {
-            val intent: Intent =  Intent(this, TitleActivity::class.java)
-            startActivity(intent)
-        }
+        BtnTitle.setOnClickListener(btnChangeTitleClicked)
 
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -49,11 +47,25 @@ class MainActivity : AppCompatActivity() {
                 getString(R.string.Tot) -> Btn.setImageResource(R.drawable.f)
             }
         }
+        if (requestCode == TITLE_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
+            currentTitle = data?.getStringExtra(CURRENT_TITLE)
+            currentTitleColor = data?.getIntExtra(CURRENT_TITLE_COLOR, 0)!!
+
+            text_main_title.setTextColor(currentTitleColor)
+            text_main_title.setText(currentTitle)
+        }
     }
     private val btnChangeBackgroundClicked = View.OnClickListener {
         val intent = Intent(this, BackGroundActivity::class.java).apply {
             putExtra(CURRENT_BACKGROUND, currentBackground)
         }
         startActivityForResult(intent, BACKGROUND_REQUEST_CODE)
+    }
+    private val btnChangeTitleClicked = View.OnClickListener {
+        val intent = Intent(this, TitleActivity::class.java).apply {
+            putExtra(CURRENT_TITLE, currentTitle)
+            putExtra(CURRENT_TITLE_COLOR, currentTitleColor)
+        }
+        startActivityForResult(intent, TITLE_REQUEST_CODE)
     }
 }

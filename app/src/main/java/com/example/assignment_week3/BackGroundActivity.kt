@@ -12,6 +12,13 @@ class BackGroundActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_back_ground)
         currentBackground= intent.getStringExtra(CURRENT_BACKGROUND)
+        BtnIa.setOnClickListener(imgManCClicked)
+        BtnIb.setOnClickListener(imgLivClicked)
+        BtnIc.setOnClickListener(imgCheClicked)
+        BtnId.setOnClickListener(imgManUClicked)
+        BtnIe.setOnClickListener(imgAsrClicked)
+        BtnIf.setOnClickListener(imgTotClicked)
+
         when (currentBackground) {
             getString(R.string.ManC) -> Btn.setImageResource(R.drawable.a)
             getString(R.string.Liv) -> Btn.setImageResource(R.drawable.b)
@@ -20,43 +27,38 @@ class BackGroundActivity : AppCompatActivity() {
             getString(R.string.Asr) -> Btn.setImageResource(R.drawable.e)
             getString(R.string.Tot) -> Btn.setImageResource(R.drawable.f)
         }
-        BtnIa.setOnClickListener(imgManCClicked)
-        BtnIb.setOnClickListener(imgLivClicked)
-        BtnIc.setOnClickListener(imgCheClicked)
-        BtnId.setOnClickListener(imgManUClicked)
-        BtnIe.setOnClickListener(imgAsrClicked)
-        BtnIf.setOnClickListener(imgTotClicked)
+
 
         BtnSave.setOnClickListener(btnSaveBackgroundClicked)
         //BtnCancelGround.setOnClickListener(btnCancleBackgroundClicked)
     }
     private val imgManCClicked = View.OnClickListener {
-        BtnIa.setImageResource(R.drawable.a)
+        Btn.setImageResource(R.drawable.a)
         currentBackground = getString(R.string.ManC)
     }
 
     private val imgLivClicked = View.OnClickListener {
-        BtnIb.setImageResource(R.drawable.b)
+        Btn.setImageResource(R.drawable.b)
         currentBackground = getString(R.string.Liv)
     }
 
     private val imgCheClicked = View.OnClickListener {
-        BtnIc.setImageResource(R.drawable.c)
+        Btn.setImageResource(R.drawable.c)
         currentBackground = getString(R.string.Che)
     }
 
     private val imgManUClicked = View.OnClickListener {
-        BtnId.setImageResource(R.drawable.d)
+        Btn.setImageResource(R.drawable.d)
         currentBackground = getString(R.string.ManU)
     }
 
     private val imgAsrClicked = View.OnClickListener {
-        BtnIe.setImageResource(R.drawable.e)
+        Btn.setImageResource(R.drawable.e)
         currentBackground = getString(R.string.Asr)
     }
 
     private val imgTotClicked = View.OnClickListener {
-        BtnIf.setImageResource(R.drawable.f)
+        Btn.setImageResource(R.drawable.f)
         currentBackground = getString(R.string.Tot)
     }
     private val btnSaveBackgroundClicked = View.OnClickListener {

@@ -6,33 +6,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:text="@string/title_activity_name"
         tools:context=".TitleActivity">
 
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Title"
-            android:id="@+id/text12310"
-            android:layout_gravity="left"
-            android:textColor="#FAFAFA"
-            android:textSize="30dp"
-            android:background="#1A237E"
-    />
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
         <EditText android:layout_width="350dp"
                   android:layout_height="wrap_content"
-                  android:text=""
+                  android:text="@string/default_title"
                   android:hint="Enter your Username"
-                  android:id="@+id/text1236"
+                  android:id="@+id/text"
                   android:layout_gravity="left"
                   android:textSize="20dp"
         />
         <ImageView android:layout_width="match_parent"
                    android:layout_height="match_parent"
                    android:layout_gravity="right"
+                   android:id="@+id/viewcolor"
                    android:background="#F50057"
         />
     </LinearLayout>
@@ -47,21 +39,21 @@
                 android:scaleType="fitCenter"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
-                android:background="#F50057"
+                android:background="@color/Red"
         />
         <Button
                 android:id="@+id/BtnP"
                 android:scaleType="fitCenter"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
-                android:background="#6A1B9A"
+                android:background="@color/Purple"
         />
         <Button
                 android:id="@+id/BtnI"
                 android:scaleType="fitCenter"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
-                android:background="#1A237E"
+                android:background="@color/Indigo"
         />
     </LinearLayout>
     <LinearLayout
@@ -71,25 +63,25 @@
 
 
         <Button
-                android:id="@+id/BtnIB"
+                android:id="@+id/BtnB"
                 android:scaleType="fitCenter"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
-                android:background="#2196F3"
+                android:background="@color/Blue"
         />
         <Button
                 android:id="@+id/BtnT"
                 android:scaleType="fitCenter"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
-                android:background="#1B5E20"
+                android:background="@color/Teal"
         />
         <Button
                 android:id="@+id/BtnG"
                 android:scaleType="fitCenter"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
-                android:background="#8BC34A"
+                android:background="@color/Green"
         />
 
     </LinearLayout>

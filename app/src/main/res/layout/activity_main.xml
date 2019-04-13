@@ -6,18 +6,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:text="@string/app_name"
         tools:context=".MainActivity">
 
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Main Screen"
-            android:id="@+id/text12310"
-            android:layout_gravity="left"
-            android:textColor="#FAFAFA"
-            android:textSize="30dp"
-            android:background="#1A237E"
-    />
     <ImageView
             android:scaleType="fitCenter"
             android:layout_marginTop="200dp"
@@ -30,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MANCITY"
-            android:id="@+id/text123"
+            android:id="@+id/text_main_title"
             android:layout_gravity="center"
             android:textColor="#8BC34A"
             android:textSize="25dp"

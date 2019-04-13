@@ -6,17 +6,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:text="@string/background_activity_name"
         tools:context=".BackGroundActivity">
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BACKGROUND"
-            android:id="@+id/text12310"
-            android:layout_gravity="left"
-            android:textColor="#FAFAFA"
-            android:textSize="30dp"
-            android:background="#1A237E"
-    />
+
     <ImageView
             android:id="@+id/Btn"
             android:scaleType="fitCenter"

@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">assignment_week3</string>
+    <string name="app_name">MAIN SCRREN</string>
+    <string name="background_activity_name">BACKGROUND</string>
+    <string name="title_activity_name">TITLE</string>
     <string name="current">current</string>
     <string name="ManC">ManC</string>
     <string name="Liv">Liv</string>
@@ -7,4 +9,5 @@
     <string name="ManU">ManU</string>
     <string name="Asr">Asr</string>
     <string name="Tot">Tot</string>
+    <string name="default_title">Manchester City</string>
 </resources>

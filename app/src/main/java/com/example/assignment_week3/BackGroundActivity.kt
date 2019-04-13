@@ -1,4 +1,6 @@
 package com.example.assignment_week3
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
@@ -9,8 +11,7 @@ class BackGroundActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_back_ground)
-        //currentBackground= intent.getStringExtra(CURRENT_BACKGROUND)
-        currentBackground = getString(R.string.ManC)
+        currentBackground= intent.getStringExtra(CURRENT_BACKGROUND)
         when (currentBackground) {
             getString(R.string.ManC) -> Btn.setImageResource(R.drawable.a)
             getString(R.string.Liv) -> Btn.setImageResource(R.drawable.b)
@@ -26,8 +27,8 @@ class BackGroundActivity : AppCompatActivity() {
         BtnIe.setOnClickListener(imgAsrClicked)
         BtnIf.setOnClickListener(imgTotClicked)
 
-        //BtnSave.setOnClickListener(btnSaveBackgroundClicked)
-        //BtnBackGround.setOnClickListener(btnCancleBackgroundClicked)
+        BtnSave.setOnClickListener(btnSaveBackgroundClicked)
+        //BtnCancelGround.setOnClickListener(btnCancleBackgroundClicked)
     }
     private val imgManCClicked = View.OnClickListener {
         BtnIa.setImageResource(R.drawable.a)
@@ -58,13 +59,13 @@ class BackGroundActivity : AppCompatActivity() {
         BtnIf.setImageResource(R.drawable.f)
         currentBackground = getString(R.string.Tot)
     }
-    /*private val btnSaveBackgroundClicked = View.OnClickListener {
+    private val btnSaveBackgroundClicked = View.OnClickListener {
         val intent = Intent()
         intent.putExtra(CURRENT_BACKGROUND, currentBackground)
         setResult(Activity.RESULT_OK, intent)
         finish()
     }
-    //private val btnCancleBackgroundClicked = View.OnClickListener {
+    /*private val btnCancleBackgroundClicked = View.OnClickListener {
         finish()
     }*/
 }

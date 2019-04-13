@@ -24,6 +24,7 @@
             android:layout_height="150dp"
             android:layout_gravity="right"
             android:background="@null"
+            android:text="@string/current"
             android:src="@drawable/a"
     />
     <LinearLayout
@@ -38,6 +39,7 @@
                 android:layout_width="140dp"
                 android:layout_height="150dp"
                 android:background="@null"
+                android:text="@string/ManC"
                 android:src="@drawable/a"
         />
         <ImageButton
@@ -46,6 +48,7 @@
                 android:layout_width="140dp"
                 android:layout_height="150dp"
                 android:background="@null"
+                android:text="@string/Liv"
                 android:src="@drawable/b"
         />
         <ImageButton
@@ -54,6 +57,7 @@
                 android:layout_width="140dp"
                 android:layout_height="150dp"
                 android:background="@null"
+                android:text="@string/Che"
                 android:src="@drawable/c"
         />
     </LinearLayout>
@@ -69,6 +73,7 @@
                 android:layout_width="140dp"
                 android:layout_height="150dp"
                 android:background="@null"
+                android:text="@string/ManU"
                 android:src="@drawable/d"
         />
         <ImageButton
@@ -77,6 +82,7 @@
                 android:layout_width="140dp"
                 android:layout_height="150dp"
                 android:background="@null"
+                android:text="@string/Asr"
                 android:src="@drawable/e"
         />
         <ImageButton
@@ -85,6 +91,7 @@
                 android:layout_width="140dp"
                 android:layout_height="150dp"
                 android:background="@null"
+                android:text="@string/Tot"
                 android:src="@drawable/f"
         />
     </LinearLayout>

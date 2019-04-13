@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">assignment_week3</string>
+    <string name="current">current</string>
+    <string name="ManC">ManC</string>
+    <string name="Liv">Liv</string>
+    <string name="Che">Che</string>
+    <string name="ManU">ManU</string>
+    <string name="Asr">Asr</string>
+    <string name="Tot">Tot</string>
 </resources>
